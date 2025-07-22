@@ -152,7 +152,7 @@ export default function Home() {
                     tier: 2, 
                     size: "<100MB MEMORY ", 
                     time: "10+ hours", 
-                    prize: "16GB RAM ", 
+                    prize: "16GB RAM", 
                     color: "text-primary",
                     bgColor: "bg-primary/10", 
                     borderColor: "border-primary",
@@ -161,7 +161,7 @@ export default function Home() {
                   { 
                     tier: 3, 
                     size: "<50MB MEMORY", 
-                    time: "18+ hours", 
+                    time: "20+ hours", 
                     prize: "32GB RAM", 
                     color: "text-success",
                     bgColor: "bg-success/10",
