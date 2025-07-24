@@ -6,9 +6,14 @@ import MemoryMonitor from './components/MemoryMonitor';
 
 export default function Home() {
   const [showAnimation, setShowAnimation] = useState(true);
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   const handleAnimationComplete = () => {
     setShowAnimation(false);
+  };
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
   };
 
   return (
@@ -34,15 +39,10 @@ export default function Home() {
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-text-primary mb-8">
                 OPTIMIZE
               </h1>
-              
-              
-              <p className="text-xl md:text-2xl text-text-secondary mb-4 font-medium">
-                Build Tiny. Code Smart. Win Big.
-              </p>
-              
+       
               
               <p className="text-2xl md:text-3xl text-text-secondary mb-12">
-                The desktop app memory optimization YSWS
+                Where every byte counts
               </p>
               
               
@@ -139,51 +139,53 @@ export default function Home() {
               <div className="grid md:grid-cols-3 gap-8">
                 {[
                   { 
-                    tier: 1, 
-                    size: "<200MB MEMORY", 
+                    name: "Efficient Coder",
+                    subtitle: "Getting Started", 
+                    size: "<200MB", 
                     time: "6+ hours", 
                     prize: "8GB RAM", 
-                    color: "text-warning",
-                    bgColor: "bg-warning/10",
-                    borderColor: "border-warning",
-                    rotation: "rotate-1"
+                    tier: "01"
                   },
                   { 
-                    tier: 2, 
-                    size: "<100MB MEMORY ", 
+                    name: "Optimization Master",
+                    subtitle: "Pushing Limits", 
+                    size: "<100MB", 
                     time: "10+ hours", 
                     prize: "16GB RAM", 
-                    color: "text-primary",
-                    bgColor: "bg-primary/10", 
-                    borderColor: "border-primary",
-                    rotation: "-rotate-1"
+                    tier: "02"
                   },
                   { 
-                    tier: 3, 
-                    size: "<50MB MEMORY", 
+                    name: "Memory Virtuoso",
+                    subtitle: "Peak Performance", 
+                    size: "<50MB", 
                     time: "20+ hours", 
                     prize: "32GB RAM", 
-                    color: "text-success",
-                    bgColor: "bg-success/10",
-                    borderColor: "border-success",
-                    rotation: "rotate-2"
+                    tier: "03"
                   }
-                ].map(({ tier, size, time, prize }) => (
-                  <div key={tier}>
-                    <div className="bg-surface-elevated border border-border rounded-lg p-8 hover:border-text-primary transition-colors">
-                      <div className="text-center">
-                        <div className="inline-flex items-center justify-center w-16 h-16 bg-surface border border-border rounded-full mb-6">
-                          <span className="text-2xl font-bold text-text-primary">T{tier}</span>
+                ].map(({ name, subtitle, size, time, prize, tier }, index) => (
+                  <div key={index} className="group">
+                    <div className="bg-surface-elevated border border-border rounded-lg p-8 hover:border-text-primary transition-all duration-300 relative overflow-hidden">
+                      <div className="absolute top-4 right-4 text-6xl font-bold text-text-muted/20">{tier}</div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-text-primary mb-1">{name}</div>
+                        <div className="text-sm text-text-secondary mb-8 font-medium">{subtitle}</div>
+                        
+                        <div className="space-y-6 mb-8">
+                          <div className="text-center">
+                            <div className="text-xs text-text-secondary uppercase tracking-widest mb-2">Memory Limit</div>
+                            <div className="text-3xl font-bold text-text-primary mb-4">{size}</div>
+                            
+                            <div className="text-xs text-text-secondary uppercase tracking-widest mb-2">Time Commitment</div>
+                            <div className="text-xl font-bold text-text-primary">{time}</div>
+                            <div className="text-xs text-text-secondary mt-1">on Hackatime</div>
+                          </div>
                         </div>
-                        <div className="space-y-3 mb-6">
-                          <div className="text-3xl font-bold text-text-primary">{size}</div>
-                          <div className="text-text-secondary">+</div>
-                          <div className="text-xl font-bold text-text-primary">{time}</div>
-                          <div className="text-text-secondary text-sm">on Hackatime</div>
-                        </div>
-                        <div className="border-t border-border pt-6">
-                          <div className="text-3xl mb-2">🏆</div>
-                          <div className="text-xl font-bold text-text-primary">{prize}</div>
+                        
+                        <div className="border-t border-border pt-6 text-center">
+                          <div className="text-xs text-text-secondary uppercase tracking-widest mb-3">Reward</div>
+                          <div className="text-2xl font-bold text-text-primary">
+                            {prize}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -197,24 +199,25 @@ export default function Home() {
         
             
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-sketch text-4xl md:text-5xl font-bold text-center text-text-primary mb-12 transform -rotate-1 scribble-highlight">
+              <h2 className="font-sketch text-4xl md:text-5xl font-bold text-center text-text-primary mb-12 transform scribble-highlight">
                 Requirements & Rules
               </h2>
               
               <div className="grid md:grid-cols-2 gap-8">
                 
                 <div className="hand-drawn-border p-8">
-                  <h3 className="font-sketch text-3xl font-bold text-text-primary mb-6 flex items-center transform -rotate-1">
+                  <h3 className="font-sketch text-3xl font-bold text-text-primary mb-6 flex items-center transform ">
                     <span className="text-primary mr-3 text-4xl">⚙️</span>
                     <span className="scribble-underline">Technical Requirements</span>
                   </h3>
                   <div className="space-y-4">
                     {[
-                      "Minimum 3 distinct screens/views",
-                      "Actually useful functionality (no hello world!)",
+                      "Minimum 4 distinct features",
+                      "1 main complex feature that demonstrates real functionality",
+                      "At least 2 genuine memory optimization techniques used",
                       "Cross-platform compatibility preferred", 
                       "Open source code on GitHub",
-                      "Document how you optimized memory usage"
+                      "Document optimization techniques and architecture decisions"
                     ].map((req, index) => (
                       <div key={index} className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
@@ -226,7 +229,7 @@ export default function Home() {
 
                 
                 <div className="hand-drawn-border p-8">
-                  <h3 className="font-sketch text-3xl font-bold text-text-primary mb-6 flex items-center transform rotate-1">
+                  <h3 className="font-sketch text-3xl font-bold text-text-primary mb-6 flex items-center transform">
                     <span className="text-success mr-3 text-4xl">⏱️</span>
                     <span className="scribble-underline">Time & Tracking</span>
                   </h3>
@@ -234,7 +237,6 @@ export default function Home() {
                     {[
                       "Hackatime tracking is MANDATORY",
                       "Install plugin for your code editor",
-                      "Minimum hours: 6 (T1), 10 (T2), 18 (T3)",
                       "Projects without tracking are disqualified"  
                     ].map((req, index) => (
                       <div key={index} className="flex items-start space-x-3">
@@ -261,7 +263,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {[
                   {
                     question: "Is Hackatime really mandatory?",
@@ -295,16 +297,32 @@ export default function Home() {
                     question: "When does the program end?",
                     answer: "This hasn't launched yet."
                   }
-                ].map(({ question, answer }, index) => {
-                  
-                  return (
-                    <div key={index} className="bg-surface-elevated border border-border rounded-lg p-6">
-                      <h3 className="text-lg font-bold text-text-primary mb-3">{question}</h3>
-                      <p className="text-text-secondary leading-relaxed">{answer}</p>
+                ].map(({ question, answer }, index) => (
+                  <div key={index} className="bg-surface-elevated border border-border rounded-lg overflow-hidden transition-all duration-200 hover:border-text-primary/30">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full text-left p-6 flex items-center justify-between group"
+                    >
+                      <h3 className="text-lg font-bold text-text-primary group-hover:text-primary transition-colors pr-4">
+                        {question}
+                      </h3>
+                      <div className={`text-2xl text-text-secondary transition-transform duration-200 flex-shrink-0 ${
+                        openFAQ === index ? 'rotate-45' : 'rotate-0'
+                      }`}>
+                        +
+                      </div>
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <div className="px-6 pb-6 pt-0">
+                        <div className="border-t border-border/50 pt-4">
+                          <p className="text-text-secondary leading-relaxed">{answer}</p>
+                        </div>
+                      </div>
                     </div>
-                  );
-                })
-              }
+                  </div>
+                ))}
               </div>
             </div>
           </section>
@@ -340,7 +358,7 @@ export default function Home() {
                 <div>
                   <div className="text-2xl font-bold text-text-primary mb-4">OPTIMIZE</div>
                   <p className="text-text-secondary text-sm leading-relaxed">
-                    The desktop app memory optimization YSWS. Build efficient, win big.
+                    Where every byte counts. Build light, Think heavy.
                   </p>
                 </div>
                 <div>

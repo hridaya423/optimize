@@ -22,12 +22,15 @@ interface VortexAnimationProps {
 }
 
 const FILE_SIZE_TEXTS = [
-  '150MB', '100MB', '25MB',
-  '1010101', '1100110', '1111000',
-  '0xFF', '0x64', '0x19',
-  'bytes', 'KB', 'MB',
-  '157286400', '104857600', '26214400',
-  'compress', 'optimize', 'minimize'
+  '200MB', '100MB', '50MB', '25MB',
+  'malloc()', 'free()', 'pool', 'cache',
+  '1010101', '1100110', '1111000', '0101010',
+  'bytes', 'KB', 'MB', 'RAM',
+  'heap', 'stack', 'memory', 'buffer',
+  '0xFF', '0x64', '0x32', '0x19',
+  'compress', 'optimize', 'minimize', 'efficient',
+  'GC', 'alloc', 'dealloc', 'leak',
+  'virtual', 'physical', 'paging', 'swap'
 ];
 
 export default function VortexAnimation({ onComplete, duration = 3500 }: VortexAnimationProps) {
