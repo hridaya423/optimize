@@ -25,13 +25,7 @@ export default function Home() {
       {!showAnimation && (
         <div className="min-h-screen bg-background">
           
-          <div className="bg-surface border-b border-border py-3 px-6">
-            <div className="max-w-6xl mx-auto text-center">
-              <p className="text-sm text-text-secondary">
-                ⚠️ This YSWS is not sponsored by Hackclub yet.
-              </p>
-            </div>
-          </div>
+          
           
           <section className="relative flex items-center justify-center px-6" style={{ minHeight: '100vh', paddingTop: '10vh' }}>
             <div className="max-w-6xl mx-auto text-center">
@@ -63,8 +57,8 @@ export default function Home() {
 
               
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-                <a href="https://forms.fillout.com/t/xwZqk1fDgWus" target="_blank" rel="noopener noreferrer" className="bg-text-primary text-background px-8 py-4 rounded-lg font-semibold text-lg hover:bg-text-secondary transition-colors">
-                  RSVP Now →
+                <a href="https://forms.hackclub.com/t/fmL5xGZng2us" target="_blank" rel="noopener noreferrer" className="bg-text-primary text-background px-8 py-4 rounded-lg font-semibold text-lg hover:bg-text-secondary transition-colors">
+                  Submit Now →
                 </a>
               </div>
             </div>
@@ -296,7 +290,7 @@ export default function Home() {
                   },
                   {
                     question: "When does the program end?",
-                    answer: "This hasn't launched yet."
+                    answer: "This program ends at 8th August"
                   }
                 ].map(({ question, answer }, index) => (
                   <div key={index} className="bg-surface-elevated border border-border rounded-lg overflow-hidden transition-all duration-200 hover:border-text-primary/30">
@@ -333,21 +327,19 @@ export default function Home() {
           <section className="py-20 px-6 bg-gradient-to-r from-primary/5 to-success/5">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-5xl md:text-6xl font-bold text-text-primary mb-6">
-                Ready to Optimize?
+                Optimized your Project?
               </h2>
-              <p className="font-sans text-xl text-text-secondary mb-8 max-w-2xl mx-auto leading-relaxed">
-                RSVP & Help make this a reality!
-              </p>
+             
               
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-8">
-                <a href="https://forms.fillout.com/t/xwZqk1fDgWus" target="_blank" rel="noopener noreferrer" className="bg-text-primary text-background px-10 py-4 rounded-lg text-lg font-semibold hover:bg-text-secondary transition-colors">
-                  RSVP Now
+                <a href="https://forms.hackclub.com/t/fmL5xGZng2us" target="_blank" rel="noopener noreferrer" className="bg-text-primary text-background px-10 py-4 rounded-lg text-lg font-semibold hover:bg-text-secondary transition-colors">
+                  Submit now →
                 </a>
                 
               </div>
 
               <div className="text-sm text-text-muted">
-                Questions? Join <span className="font-semibold text-primary">Hack Club Slack #optimize</span>
+                Questions? Join <a href="https://hackclub.slack.com/archives/C096NH7FW4T"><span className="font-semibold text-primary">#optimize</span></a>
               </div>
             </div>
           </section>
@@ -365,7 +357,7 @@ export default function Home() {
                 <div>
                   <h4 className="font-semibold text-text-primary mb-4">Community</h4>
                   <div className="space-y-2 text-sm">
-                    <a href="" className="block text-text-secondary hover:text-primary transition-colors">#optimize Channel</a>
+                    <a href="https://hackclub.slack.com/archives/C096NH7FW4T" className="block text-text-secondary hover:text-primary transition-colors">#optimize</a>
                     <a href="https://github.com/hridaya423/optimize" className="block text-text-secondary hover:text-primary transition-colors">GitHub Repository</a>
                   </div>
                 </div>
