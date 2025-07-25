@@ -217,7 +217,8 @@ export default function Home() {
                       "At least 2 genuine memory optimization techniques used",
                       "Cross-platform compatibility preferred", 
                       "Open source code on GitHub",
-                      "Document optimization techniques and architecture decisions"
+                      "Document optimization techniques and architecture decisions",
+                      "Have an executable binary for testing",
                     ].map((req, index) => (
                       <div key={index} className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
