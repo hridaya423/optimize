@@ -1,6 +1,6 @@
 # OPTIMIZE
 
-A Hack Club YSWS (You Ship, We Ship) program challenging developers to build memory-efficient desktop applications. Create something incredible under strict memory limits and win RAM upgrades for your setup
+A Hack Club YSWS (You Ship, We Ship) program challenging developers to build memory-efficient desktop applications. Create any desktop application (games, productivity tools, utilities, creative apps, etc.) under strict memory limits and win RAM upgrades for your setup
 
 ## 📋 Project Submission
 
