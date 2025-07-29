@@ -11,7 +11,6 @@ interface MemoryTier {
   color: string;
   gradient: string;
 }
-
 const memoryTiers: MemoryTier[] = [
   {
     id: 'light',
@@ -201,12 +200,7 @@ Focus on simplicity, practicality, and buildability. Think like a developer who 
                 AI-powered desktop app concepts tailored for memory efficiency
               </p>
             </div>
-            <Link 
-              href="/"
-              className="bg-surface-elevated border border-border px-6 py-3 rounded-lg font-semibold hover:bg-text-primary hover:text-background transition-all"
-            >
-              ← Back Home
-            </Link>
+           
           </div>
         </div>
       </div>
