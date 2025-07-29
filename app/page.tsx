@@ -61,7 +61,7 @@ export default function Home() {
                   💡 Get App Ideas
                 </a>
                 <a href="https://forms.hackclub.com/t/fmL5xGZng2us" target="_blank" rel="noopener noreferrer" className="bg-text-primary text-background px-8 py-4 rounded-lg font-semibold text-lg hover:bg-text-secondary transition-colors">
-                  Submit Now →
+                  Submit Now
                 </a>
               </div>
             </div>
@@ -294,6 +294,14 @@ export default function Home() {
                   {
                     question: "When does the program end?",
                     answer: "This program ends at 8th August"
+                  },
+                  {
+                    question: "Can it be a TUI?",
+                    answer: "No, it has to be GUI only."
+                  },
+                  {
+                    question: "Can i make absolutely anything?",
+                    answer: "Yes, any desktop app is allowed, as long as it meets the requirements."
                   }
                 ].map(({ question, answer }, index) => (
                   <div key={index} className="bg-surface-elevated border border-border rounded-lg overflow-hidden transition-all duration-200 hover:border-text-primary/30">

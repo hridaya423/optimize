@@ -386,7 +386,7 @@ Focus on simplicity, practicality, and buildability. Think like a developer who 
                     rel="noopener noreferrer" 
                     className="bg-text-primary text-background px-8 py-4 rounded-lg font-semibold text-lg hover:bg-text-secondary transition-colors"
                   >
-                    Ready to Build This →
+                    Built it already? Submit here!
                   </a>
                 </div>
               </div>
