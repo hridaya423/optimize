@@ -57,7 +57,7 @@ export default function Home() {
 
               
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-                <a href="/ideas" className="bg-surface-elevated border border-border px-8 py-4 rounded-lg font-semibold text-lg hover:bg-text-primary hover:text-background transition-colors">
+                <a href="/ideas" className="bg-text-primary text-background px-8 py-4 rounded-lg font-semibold text-lg hover:bg-text-secondary transition-colors">
                   💡 Get App Ideas
                 </a>
                 <a href="https://forms.hackclub.com/t/fmL5xGZng2us" target="_blank" rel="noopener noreferrer" className="bg-text-primary text-background px-8 py-4 rounded-lg font-semibold text-lg hover:bg-text-secondary transition-colors">

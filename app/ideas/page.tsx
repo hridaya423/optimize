@@ -382,7 +382,7 @@ Focus on simplicity, practicality, and buildability. Think like a developer who 
                   <button
                     onClick={generateIdea}
                     disabled={isGenerating}
-                    className="bg-surface border border-border px-8 py-4 rounded-lg font-semibold text-lg hover:bg-surface-elevated transition-colors"
+                    className="bg-text-primary text-background px-8 py-4 rounded-lg font-semibold text-lg hover:bg-text-secondary transition-colors"
                   >
                     Generate Another Idea
                   </button>
