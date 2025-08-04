@@ -138,7 +138,7 @@ export default function Home() {
                   { 
                     name: "Efficient Coder",
                     subtitle: "Getting Started", 
-                    size: "<200MB", 
+                    size: "<225MB", 
                     time: "6+ hours", 
                     prize: "8GB RAM", 
                     tier: "01"
@@ -146,7 +146,7 @@ export default function Home() {
                   { 
                     name: "Optimization Master",
                     subtitle: "Pushing Limits", 
-                    size: "<100MB", 
+                    size: "<125MB", 
                     time: "10+ hours", 
                     prize: "16GB RAM", 
                     tier: "02"
@@ -154,7 +154,7 @@ export default function Home() {
                   { 
                     name: "Memory Virtuoso",
                     subtitle: "Peak Performance", 
-                    size: "<50MB", 
+                    size: "<75MB", 
                     time: "20+ hours", 
                     prize: "32GB RAM", 
                     tier: "03"
