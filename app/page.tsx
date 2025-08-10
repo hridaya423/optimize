@@ -293,7 +293,7 @@ export default function Home() {
                   },
                   {
                     question: "When does the program end?",
-                    answer: "This program ends at 8th August"
+                    answer: "This program ends at 11:59 EDT on the 22th August"
                   },
                   {
                     question: "Can it be a TUI?",
